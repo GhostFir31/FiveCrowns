@@ -49,28 +49,28 @@ public class Mano {
 
         HashMap<Integer, String> numeros = new HashMap<>();
 
-        numeros.put(1, "A");
-        numeros.put(2, "2");
-        numeros.put(3, "3");
-        numeros.put(4, "4");
-        numeros.put(5, "5");
-        numeros.put(6, "6");
-        numeros.put(7, "7");
-        numeros.put(8, "8");
-        numeros.put(9, "9");
-        numeros.put(10, "10");
-        numeros.put(11, "J");
-        numeros.put(12, "Q");
-        numeros.put(13, "K");
-        numeros.put(14, "----- ");
+      //  numeros.put(1, "A");
+      // numeros.put(2, "2");
+        numeros.put(1, "3");
+        numeros.put(2, "4");
+        numeros.put(3, "5");
+        numeros.put(4, "6");
+        numeros.put(5, "7");
+        numeros.put(6, "8");
+        numeros.put(7, "9");
+        numeros.put(8, "10");
+        numeros.put(9, "J");
+        numeros.put(10, "Q");
+        numeros.put(11, "K");
+        numeros.put(12, "----- ");
 
-        aleatorioNumero = numeroAleatorio.nextInt(14) + 1;
+        aleatorioNumero = numeroAleatorio.nextInt(12) + 1;
         aleatorioFigura = numeroAleatorio.nextInt(4) + 1;
 
         //Si el valor del numero es 14 regresa un joker
-        if (aleatorioNumero == 14) {
+        if (aleatorioNumero == 12) {
 
-            return new Carta(figuras.get(6), colores.get(6), numeros.get(14));
+            return new Carta(figuras.get(6), colores.get(6), numeros.get(12));
 
             //De otra manera empieza a escoger el palo y numero de la carta
         } else {
@@ -133,82 +133,14 @@ public class Mano {
         return baraja;
     }
 
-    public static ArrayList<Carta> generarCartasEnOrden() {
-        ArrayList<Carta> juego = new ArrayList<>();
-        Carta carta;
-        int jokers=0;
-        HashMap<Integer, String> figuras = new HashMap<>();
-        figuras.put(1, "Trebol");
-        figuras.put(2, "Picas");
-        figuras.put(3, "Diamante");
-        figuras.put(4, "Corazon");
-        figuras.put(5, "Estrella");
-        figuras.put(6, "Joker");
+   
 
-        HashMap<Integer, String> colores = new HashMap<>();
-        colores.put(1, "Rojo");
-        colores.put(2, "Negro");
-        colores.put(3, "Amarillo");
-        colores.put(4, "Azul");
-        colores.put(5, "Verde");
-        colores.put(6, " -----");
+    public Pila<Carta> getBaraja() {
+        return baraja;
+    }
 
-        HashMap<Integer, String> numeros = new HashMap<>();
-        numeros.put(1, "A");
-        numeros.put(2, "2");
-        numeros.put(3, "3");
-        numeros.put(4, "4");
-        numeros.put(5, "5");
-        numeros.put(6, "6");
-        numeros.put(7, "7");
-        numeros.put(8, "8");
-        numeros.put(9, "9");
-        numeros.put(10, "10");
-        numeros.put(11, "J");
-        numeros.put(12, "Q");
-        numeros.put(13, "K");
-        numeros.put(14, "-----");
-
-        for (int aleatorioFigura = 1; aleatorioFigura <= 6; aleatorioFigura++) {
-           for(int aleatorioNumero=1;aleatorioNumero<=13;aleatorioNumero++){
-            switch (aleatorioFigura) {
-                //Si la figura es Trebol regresa un Trebol Verde el numero se genera Aleatoriamente.
-                case 1:
-                    carta = new Carta(figuras.get(aleatorioFigura), colores.get(5), numeros.get(aleatorioNumero));
-                    juego.add(carta);
-                    break;
-                //Si la figura es Picas regresa un Picas Negro el numero se genera Aleatoriamente.
-                case 2:
-                    carta =new Carta(figuras.get(aleatorioFigura), colores.get(2), numeros.get(aleatorioNumero));
-                    juego.add(carta);
-                    break;
-                //Si la figura es Diamante regresa un Diamante Azul el numero se genera Aleatoriamente.
-                case 3:
-                    carta =new Carta(figuras.get(aleatorioFigura), colores.get(4), numeros.get(aleatorioNumero));
-                    juego.add(carta);
-                    break;
-                //Si la figura es Corazon regresa un Corazon Rojo el numero se genera Aleatoriamente.
-                case 4:
-                    carta =new Carta(figuras.get(aleatorioFigura), colores.get(1), numeros.get(aleatorioNumero));
-                    juego.add(carta);
-                    break;
-                //Si la figura es Estrella regresa un Estrella Amarilla el numero se genera Aleatoriamente.
-                case 5:
-                    carta =new Carta(figuras.get(aleatorioFigura), colores.get(3), numeros.get(aleatorioNumero));
-                    juego.add(carta);
-                    break;
-                case 6:if(jokers<=2){
-                    carta =new Carta(figuras.get(6), colores.get(6), numeros.get(14));
-                    juego.add(carta);
-                    jokers++;
-                             }
-                    break;
-                default:
-
-            }
-           }
-        }
-        return juego;
+    public void setBaraja(Pila<Carta> baraja) {
+        this.baraja = baraja;
     }
 
     @Override
