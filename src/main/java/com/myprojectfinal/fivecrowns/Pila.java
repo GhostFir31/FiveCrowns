@@ -28,20 +28,20 @@ public class Pila<T> {
 
     }
 // puede haber un error en el diagrama hay T
-    public void pop(){
+    public T pop(){
 
         if(estaVacia()){
                System.out.println("SubDesbordamiento");
 
             }else{
-
-                pila.remove(pila.size()-1);
-               
                 tope--;
+                return pila.remove(pila.size()-1);
+               
 
             }
-
+        return null;
     }
+    
 
     public void push(T dato){
 

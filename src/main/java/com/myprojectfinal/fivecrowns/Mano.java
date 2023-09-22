@@ -49,8 +49,8 @@ public class Mano {
 
         HashMap<Integer, String> numeros = new HashMap<>();
 
-      //  numeros.put(1, "A");
-      // numeros.put(2, "2");
+        //  numeros.put(1, "A");
+        // numeros.put(2, "2");
         numeros.put(1, "3");
         numeros.put(2, "4");
         numeros.put(3, "5");
@@ -133,7 +133,71 @@ public class Mano {
         return baraja;
     }
 
-   
+    public void filtrarPorNumero(String numero) {
+        Pila<Carta> nuevaBaraja = new Pila<>();
+
+        while (!baraja.estaVacia()) {
+            Carta carta = baraja.pop();
+            if (!carta.getNumero().equals(numero)) {
+                nuevaBaraja.push(carta);
+            }
+        }
+
+        baraja = nuevaBaraja;
+    }
+
+    public void filtrarPorPalo(int palo) {
+        String trad = null;
+
+        switch (palo) {
+            case 1:
+                trad = "Trebol";
+                break;
+            case 2:
+                trad = "Picas";
+                break;
+            case 3:
+                trad = "Diamante";
+                break;
+            case 4:
+                trad = "Corazon";
+                break;
+            case 5:
+                trad = "Estrella";
+                break;
+            case 6:
+                trad = "Joker";
+                break;
+
+        }
+
+        Pila<Carta> nuevaBaraja = new Pila<>();
+
+        while (!baraja.estaVacia()) {
+            Carta carta = baraja.pop();
+            if (!carta.getFigura().equals(trad)) {
+                nuevaBaraja.push(carta);
+            }
+        }
+
+        baraja = nuevaBaraja;
+    }
+
+    public Pila<Carta> copiarBaraja(Pila<Carta> baraja) {
+        Pila<Carta> barajaBackup = new Pila<>();
+
+        while (!baraja.estaVacia()) {
+            Carta carta = baraja.pop();
+            barajaBackup.push(carta);
+        }
+
+        while (!barajaBackup.estaVacia()) {
+            Carta carta = barajaBackup.pop();
+            baraja.push(carta);
+        }
+
+        return barajaBackup;
+    }
 
     public Pila<Carta> getBaraja() {
         return baraja;
