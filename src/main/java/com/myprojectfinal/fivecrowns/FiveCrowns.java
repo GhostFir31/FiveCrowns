@@ -16,19 +16,18 @@ public class FiveCrowns {
         Scanner leer = new Scanner(System.in);
 
         int opcion;
-
+do {
         System.out.println("1.Tomar Una Mano de Cartas");
         System.out.println("2.Salir");
         opcion = leer.nextInt();
         leer.nextLine();
-        do {
+
             switch (opcion) {
 
                 case 1:
                     int filtro;
                     Mano mano = new Mano(5);
-                    Mano manobackup=new Mano(5);
-
+                    
                     do {
                         System.out.println("" + mano.getBaraja().toString());
                         System.out.println("Escoga lo que quiera filtrar");
@@ -41,13 +40,13 @@ public class FiveCrowns {
                         switch (filtro) {
 
                             case 1:
-                                System.out.println("Numeros:");
+                                System.out.println("Numeros=");
                                 System.out.println("3,4,5,6,7,8,9,10,J,Q,K");
-                                
+
                                 String numero = leer.nextLine();
-                                numero=numero.toUpperCase();
+                                numero = numero.toUpperCase();
                                 mano.filtrarPorNumero(numero);
-                                
+
                                 break;
 
                             case 2:
@@ -63,9 +62,11 @@ public class FiveCrowns {
                                 leer.nextLine();
                                 mano.filtrarPorPalo(palo);
                                 break;
-                            case 3: manobackup.setBaraja(manobackup.copiarBaraja(mano.getBaraja()));
+                            case 3: 
+                               
+                                break;
 
-                                    break;
+                                default: System.out.println("Numero fuera del menu");
                         }
                     } while (filtro != 4);
                     break;
@@ -75,7 +76,7 @@ public class FiveCrowns {
 
                     break;
 
-                default:
+                default: System.out.println("Numero fuera del menu");
 
             }
         } while (opcion != 2);

@@ -22,6 +22,11 @@ public class Mano {
 
     }
 
+    public Mano(Pila<Carta> baraja){
+
+        this.baraja=baraja;
+    }
+
     public static Carta generarCartaAleatoria() {
 
         int aleatorioFigura;
@@ -135,12 +140,18 @@ public class Mano {
 
     public void filtrarPorNumero(String numero) {
         Pila<Carta> nuevaBaraja = new Pila<>();
-
+        ArrayList<Carta> orden = new ArrayList<>();
         while (!baraja.estaVacia()) {
             Carta carta = baraja.pop();
             if (!carta.getNumero().equals(numero)) {
-                nuevaBaraja.push(carta);
+                orden.add(carta);
             }
+        }
+        
+        for (int i=orden.size()-1; i>=0; i--){
+
+            nuevaBaraja.push(orden.get(i));
+
         }
 
         baraja = nuevaBaraja;
@@ -172,31 +183,22 @@ public class Mano {
         }
 
         Pila<Carta> nuevaBaraja = new Pila<>();
+        ArrayList<Carta> orden = new ArrayList<>();
 
         while (!baraja.estaVacia()) {
             Carta carta = baraja.pop();
             if (!carta.getFigura().equals(trad)) {
-                nuevaBaraja.push(carta);
+                orden.add(carta);
             }
         }
 
+        for (int i=orden.size()-1; i>=0; i--){
+
+            nuevaBaraja.push(orden.get(i));
+
+        }
+
         baraja = nuevaBaraja;
-    }
-
-    public Pila<Carta> copiarBaraja(Pila<Carta> baraja) {
-        Pila<Carta> barajaBackup = new Pila<>();
-
-        while (!baraja.estaVacia()) {
-            Carta carta = baraja.pop();
-            barajaBackup.push(carta);
-        }
-
-        while (!barajaBackup.estaVacia()) {
-            Carta carta = barajaBackup.pop();
-            baraja.push(carta);
-        }
-
-        return barajaBackup;
     }
 
     public Pila<Carta> getBaraja() {
