@@ -40,7 +40,7 @@ public class FiveCrowns {
 
                         System.out.println("Baraja Actual:" + mano.getBaraja().toString());
                         System.out.println("BarajaAux: " + barajaAux);
-                        System.out.println("Baraja Copiada: " + mano2.getBaraja().toString());
+                     //   System.out.println("Baraja Copiada: " + mano2.getBaraja().toString());
                         System.out.println("Escoga lo que quiera filtrar");
                         System.out.println("1)Numero");
                         System.out.println("2)Palo");
