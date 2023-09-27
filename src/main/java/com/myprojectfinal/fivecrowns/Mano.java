@@ -22,6 +22,8 @@ public class Mano {
 
     }
 
+
+
     public static Carta generarCartaAleatoria() {
 
         int aleatorioFigura;
@@ -139,13 +141,14 @@ public class Mano {
     }
 
     public void filtrarPorNumero(String numero, Pila<Carta> barajaAux) {
+
         Pila<Carta> nuevaBaraja = new Pila<>();
         ArrayList<Carta> orden = new ArrayList<>();
+
         while (!baraja.estaVacia()) {
             Carta carta = baraja.pop();
             if (!carta.getNumero().equals(numero)) {
                 orden.add(carta);
-                barajaAux.push(carta);
             }
 
             if (carta.getNumero().equals(numero)) {
@@ -216,6 +219,28 @@ public class Mano {
 
     public void setBaraja(Pila<Carta> baraja) {
         this.baraja = baraja;
+    }
+
+    public void crearCopia(Pila<Carta> pilaOriginal) {
+        ArrayList<Carta> aux = new ArrayList<>();
+        ArrayList<Carta> pilaNueva = new ArrayList<>();
+
+        while (!pilaOriginal.estaVacia()) {
+            Carta carta = pilaOriginal.pop();
+            aux.add(carta);
+        }
+
+        for (int i = aux.size() - 1; i >= 0; i--) {
+            pilaOriginal.push(aux.get(i));
+        }
+
+        for (int i = aux.size() - 1; i >= 0; i--) {
+            pilaNueva.add(aux.get(i));
+        }
+
+        Pila<Carta> pilaCopia = new Pila<>(pilaNueva);
+
+        this.baraja = pilaCopia;
     }
 
     @Override

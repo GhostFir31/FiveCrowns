@@ -2,6 +2,7 @@ package com.myprojectfinal.fivecrowns;
 
 import java.util.ArrayList;
 
+
 public class Pila<T> {
 
  ArrayList <T> pila;
@@ -14,6 +15,15 @@ public class Pila<T> {
         tope=-1;
 
     }
+
+    public Pila(ArrayList<T> elementosIniciales) {
+
+    pila = new ArrayList<>(elementosIniciales);
+
+    tope = elementosIniciales.size() - 1;
+
+    }
+
 
     public boolean estaVacia(){
 
@@ -72,7 +82,11 @@ public class Pila<T> {
         }
 
     }
-
+    
+    public void clear() {
+        pila.clear(); 
+        tope = -1;    
+    }
 
     @Override
     public String toString() {

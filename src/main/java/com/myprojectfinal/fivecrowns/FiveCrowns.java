@@ -19,11 +19,11 @@ public class FiveCrowns {
 
         do {
 
-        System.out.println("1.Tomar Una Mano de Cartas");
-        System.out.println("2.Salir");
-        
-        opcion = leer.nextInt();
-        leer.nextLine();
+            System.out.println("1.Tomar Una Mano de Cartas");
+            System.out.println("2.Salir");
+
+            opcion = leer.nextInt();
+            leer.nextLine();
 
             switch (opcion) {
 
@@ -31,13 +31,16 @@ public class FiveCrowns {
                     int filtro;
 
                     Mano mano = new Mano(5);
-
-                    Pila <Carta> barajaOriginal= mano.getBaraja();
-
-                    Pila <Carta> barajaAux = new Pila<>();
+                    Mano mano2 = new Mano(5);
+                    
+                    mano2.crearCopia(mano.getBaraja());
+                    Pila<Carta> barajaAux = new Pila<>();
 
                     do {
+
                         System.out.println("Baraja Actual:" + mano.getBaraja().toString());
+                        System.out.println("BarajaAux: " + barajaAux);
+                        System.out.println("Baraja Copiada: " + mano2.getBaraja().toString());
                         System.out.println("Escoga lo que quiera filtrar");
                         System.out.println("1)Numero");
                         System.out.println("2)Palo");
@@ -45,6 +48,7 @@ public class FiveCrowns {
                         System.out.println("4)Salir");
                         filtro = leer.nextInt();
                         leer.nextLine();
+
                         switch (filtro) {
 
                             case 1:
@@ -53,8 +57,13 @@ public class FiveCrowns {
 
                                 String numero = leer.nextLine();
                                 numero = numero.toUpperCase();
-                                mano.filtrarPorNumero(numero,barajaAux);
+                                if (!mano.getBaraja().estaVacia()) {
+                                    mano.filtrarPorNumero(numero, barajaAux);
+                                } else {
 
+                                    System.out.println("Ya no hay cartas");
+
+                                }
                                 break;
 
                             case 2:
@@ -68,24 +77,37 @@ public class FiveCrowns {
 
                                 int palo = leer.nextInt();
                                 leer.nextLine();
-                                mano.filtrarPorPalo(palo,barajaAux);
+                                if (!mano.getBaraja().estaVacia()) {
+
+                                    mano.filtrarPorPalo(palo, barajaAux);
+
+                                } else {
+
+                                    System.out.println("Ya no hay cartas");
+
+                                }
                                 break;
 
-                            case 3: System.out.println("barajaAux:"+barajaAux);
-                                    mano.setBaraja(barajaOriginal);
-                                      break;
+                            case 3:
+                                barajaAux.clear();
+                                
+                                mano.crearCopia(mano2.getBaraja());
 
-                                default: System.out.println("Numero fuera del menu");
+                                break;
+
+                            default:
+                                System.out.println("Numero fuera del menu");
                         }
                     } while (filtro != 4);
                     break;
 
                 case 2:
-                         System.out.println("Adios!! c:");
+                    System.out.println("Adios!! c:");
 
                     break;
 
-                default: System.out.println("Numero fuera del menu");
+                default:
+                    System.out.println("Numero fuera del menu");
 
             }
         } while (opcion != 2);
