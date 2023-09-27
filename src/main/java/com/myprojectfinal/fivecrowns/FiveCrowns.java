@@ -16,9 +16,12 @@ public class FiveCrowns {
         Scanner leer = new Scanner(System.in);
 
         int opcion;
-do {
+
+        do {
+
         System.out.println("1.Tomar Una Mano de Cartas");
         System.out.println("2.Salir");
+        
         opcion = leer.nextInt();
         leer.nextLine();
 
@@ -26,10 +29,15 @@ do {
 
                 case 1:
                     int filtro;
+
                     Mano mano = new Mano(5);
-                    
+
+                    Pila <Carta> barajaOriginal= mano.getBaraja();
+
+                    Pila <Carta> barajaAux = new Pila<>();
+
                     do {
-                        System.out.println("" + mano.getBaraja().toString());
+                        System.out.println("Baraja Actual:" + mano.getBaraja().toString());
                         System.out.println("Escoga lo que quiera filtrar");
                         System.out.println("1)Numero");
                         System.out.println("2)Palo");
@@ -45,7 +53,7 @@ do {
 
                                 String numero = leer.nextLine();
                                 numero = numero.toUpperCase();
-                                mano.filtrarPorNumero(numero);
+                                mano.filtrarPorNumero(numero,barajaAux);
 
                                 break;
 
@@ -60,11 +68,12 @@ do {
 
                                 int palo = leer.nextInt();
                                 leer.nextLine();
-                                mano.filtrarPorPalo(palo);
+                                mano.filtrarPorPalo(palo,barajaAux);
                                 break;
-                            case 3: 
-                               
-                                break;
+
+                            case 3: System.out.println("barajaAux:"+barajaAux);
+                                    mano.setBaraja(barajaOriginal);
+                                      break;
 
                                 default: System.out.println("Numero fuera del menu");
                         }
@@ -72,7 +81,7 @@ do {
                     break;
 
                 case 2:
-                    System.out.println("Adios!! c:");
+                         System.out.println("Adios!! c:");
 
                     break;
 

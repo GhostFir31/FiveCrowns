@@ -18,13 +18,8 @@ public class Mano {
 
     public Mano(int tamañoMano) {
 
-        baraja = generarNCartas(tamañoMano);
+        this.baraja = generarNCartas(tamañoMano);
 
-    }
-
-    public Mano(Pila<Carta> baraja){
-
-        this.baraja=baraja;
     }
 
     public static Carta generarCartaAleatoria() {
@@ -54,7 +49,7 @@ public class Mano {
 
         HashMap<Integer, String> numeros = new HashMap<>();
 
-        //  numeros.put(1, "A");
+        // numeros.put(1, "A");
         // numeros.put(2, "2");
         numeros.put(1, "3");
         numeros.put(2, "4");
@@ -72,28 +67,33 @@ public class Mano {
         aleatorioNumero = numeroAleatorio.nextInt(12) + 1;
         aleatorioFigura = numeroAleatorio.nextInt(4) + 1;
 
-        //Si el valor del numero es 14 regresa un joker
+        // Si el valor del numero es 14 regresa un joker
         if (aleatorioNumero == 12) {
 
             return new Carta(figuras.get(6), colores.get(6), numeros.get(12));
 
-            //De otra manera empieza a escoger el palo y numero de la carta
+            // De otra manera empieza a escoger el palo y numero de la carta
         } else {
 
             switch (aleatorioFigura) {
-                //Si la figura es Trebol regresa un Trebol Verde el numero se genera Aleatoriamente.
+                // Si la figura es Trebol regresa un Trebol Verde el numero se genera
+                // Aleatoriamente.
                 case 1:
                     return new Carta(figuras.get(aleatorioFigura), colores.get(5), numeros.get(aleatorioNumero));
-                //Si la figura es Picas regresa un Picas Negro el numero se genera Aleatoriamente.
+                // Si la figura es Picas regresa un Picas Negro el numero se genera
+                // Aleatoriamente.
                 case 2:
                     return new Carta(figuras.get(aleatorioFigura), colores.get(2), numeros.get(aleatorioNumero));
-                //Si la figura es Diamante regresa un Diamante Azul el numero se genera Aleatoriamente.
+                // Si la figura es Diamante regresa un Diamante Azul el numero se genera
+                // Aleatoriamente.
                 case 3:
                     return new Carta(figuras.get(aleatorioFigura), colores.get(4), numeros.get(aleatorioNumero));
-                //Si la figura es Corazon regresa un Corazon Rojo el numero se genera Aleatoriamente.
+                // Si la figura es Corazon regresa un Corazon Rojo el numero se genera
+                // Aleatoriamente.
                 case 4:
                     return new Carta(figuras.get(aleatorioFigura), colores.get(1), numeros.get(aleatorioNumero));
-                //Si la figura es Estrella regresa un Estrella Amarilla el numero se genera Aleatoriamente.
+                // Si la figura es Estrella regresa un Estrella Amarilla el numero se genera
+                // Aleatoriamente.
                 case 5:
                     return new Carta(figuras.get(aleatorioFigura), colores.get(3), numeros.get(aleatorioNumero));
 
@@ -138,17 +138,23 @@ public class Mano {
         return baraja;
     }
 
-    public void filtrarPorNumero(String numero) {
+    public void filtrarPorNumero(String numero, Pila<Carta> barajaAux) {
         Pila<Carta> nuevaBaraja = new Pila<>();
         ArrayList<Carta> orden = new ArrayList<>();
         while (!baraja.estaVacia()) {
             Carta carta = baraja.pop();
             if (!carta.getNumero().equals(numero)) {
                 orden.add(carta);
+                barajaAux.push(carta);
+            }
+
+            if (carta.getNumero().equals(numero)) {
+
+                barajaAux.push(carta);
             }
         }
-        
-        for (int i=orden.size()-1; i>=0; i--){
+
+        for (int i = orden.size() - 1; i >= 0; i--) {
 
             nuevaBaraja.push(orden.get(i));
 
@@ -157,7 +163,7 @@ public class Mano {
         baraja = nuevaBaraja;
     }
 
-    public void filtrarPorPalo(int palo) {
+    public void filtrarPorPalo(int palo, Pila<Carta> barajaAux) {
         String trad = null;
 
         switch (palo) {
@@ -190,9 +196,12 @@ public class Mano {
             if (!carta.getFigura().equals(trad)) {
                 orden.add(carta);
             }
+            if (carta.getFigura().equals(trad)) {
+                barajaAux.push(carta);
+            }
         }
 
-        for (int i=orden.size()-1; i>=0; i--){
+        for (int i = orden.size() - 1; i >= 0; i--) {
 
             nuevaBaraja.push(orden.get(i));
 
