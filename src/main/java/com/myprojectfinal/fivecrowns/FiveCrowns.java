@@ -30,8 +30,8 @@ public class FiveCrowns {
                 case 1:
                     int filtro;
 
-                    Mano mano = new Mano(5);
-                    Mano mano2 = new Mano(5);
+                    Mano mano = new Mano(10);
+                    Mano mano2 = new Mano(10);
                     
                     mano2.crearCopia(mano.getBaraja());
                     Pila<Carta> barajaAux = new Pila<>();
@@ -52,7 +52,7 @@ public class FiveCrowns {
                         switch (filtro) {
 
                             case 1:
-                                System.out.println("Numeros=");
+                                System.out.println("Numeros:");
                                 System.out.println("3,4,5,6,7,8,9,10,J,Q,K");
 
                                 String numero = leer.nextLine();
@@ -67,7 +67,7 @@ public class FiveCrowns {
                                 break;
 
                             case 2:
-                                System.out.println("Palo=");
+                                System.out.println("Palo:");
                                 System.out.println("1)Trebol");
                                 System.out.println("2)Picas");
                                 System.out.println("3)Diamante");

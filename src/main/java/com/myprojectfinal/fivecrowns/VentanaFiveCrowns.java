@@ -530,69 +530,74 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
         System.out.println("" + barajaAux);
 
 //BARAJA ORIGINAL IMPRESION
+ 
+                cartaBarajaOriginal1.setText("");
+
+                cartaBarajaOriginal2.setText("");
+
+                cartaBarajaOriginal3.setText("");
+
+                cartaBarajaOriginal4.setText("");
+
+                cartaBarajaOriginal5.setText("");
+
+                cartaBarajaOriginal6.setText("");
+
+                cartaBarajaOriginal7.setText("");
+
+                cartaBarajaOriginal8.setText("");
+
+                cartaBarajaOriginal9.setText("");
+
+                cartaBarajaOriginal10.setText("");
+
+
         switch (contenidoMano.size()) {
 
             case 0:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
                 cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
 
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
+                cartaBarajaOriginal2.setText("");
 
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
+                cartaBarajaOriginal3.setText("");
 
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
+                cartaBarajaOriginal4.setText("");
 
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
+                cartaBarajaOriginal5.setText("");
 
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
+                cartaBarajaOriginal6.setText("");
 
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
+                cartaBarajaOriginal7.setText("");
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                cartaBarajaOriginal10.setText("");
                 break;
             case 1:
-                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
+                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
                 cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
 
                 cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
                 cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
 
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
+                cartaBarajaOriginal3.setText("");
 
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
+                cartaBarajaOriginal4.setText("");
 
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
+                cartaBarajaOriginal5.setText("");
 
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
+                cartaBarajaOriginal6.setText("");
 
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
+                cartaBarajaOriginal7.setText("");
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                cartaBarajaOriginal10.setText("");
                 break;
             case 2:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
@@ -604,26 +609,19 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
                 cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
 
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
+                cartaBarajaOriginal4.setText("");
 
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
+                cartaBarajaOriginal5.setText("");
 
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
+                cartaBarajaOriginal6.setText("");
 
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
+                cartaBarajaOriginal7.setText("");
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                cartaBarajaOriginal10.setText("");
                 break;
             case 3:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
@@ -638,23 +636,23 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
                 cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
 
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
+               
+                cartaBarajaOriginal5.setText("");
 
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
+            
+                cartaBarajaOriginal6.setText("");
 
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
+                
+                cartaBarajaOriginal7.setText("");
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+                
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+               
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+               
+                cartaBarajaOriginal10.setText("");
                 break;
 
             case 4:
@@ -673,20 +671,20 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
                 cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
 
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
+           
+                cartaBarajaOriginal6.setText("");
 
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
+                
+                cartaBarajaOriginal7.setText("");
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+               
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                
+                cartaBarajaOriginal10.setText("");
                 break;
             case 5:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
@@ -707,17 +705,17 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
                 cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
 
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
+                
+                cartaBarajaOriginal7.setText("");
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+                
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                
+                cartaBarajaOriginal10.setText("");
                 break;
             case 6:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
@@ -741,14 +739,14 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
                 cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
 
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
+                
+                cartaBarajaOriginal8.setText("");
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                
+                cartaBarajaOriginal10.setText("");
                 break;
             case 7:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
@@ -775,11 +773,11 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
                 cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
 
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
+                
+                cartaBarajaOriginal9.setText("");
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                
+                cartaBarajaOriginal10.setText("" );
                 break;
             case 8:
                 cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
@@ -809,8 +807,8 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
                 cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
 
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+                
+                cartaBarajaOriginal10.setText("");
 
                 break;
             case 9:
