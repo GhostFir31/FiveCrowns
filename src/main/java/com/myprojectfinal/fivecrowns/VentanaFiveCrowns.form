@@ -23,19 +23,261 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="910" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="TituloVentana" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="317" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cartaBarajaAux1" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartaBarajaAux2" min="-2" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cartaBarajaAux6" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartaBarajaAux7" min="-2" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="BarajaAuxiliarTEXT" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cartaBarajaAux3" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartaBarajaAux4" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartaBarajaAux5" min="-2" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cartaBarajaAux8" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartaBarajaAux9" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cartaBarajaAux10" min="-2" pref="62" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cartaBarajaOriginal1" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cartaBarajaOriginal2" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cartaBarajaOriginal6" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cartaBarajaOriginal7" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cartaBarajaOriginal8" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cartaBarajaOriginal9" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cartaBarajaOriginal10" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cartaBarajaOriginal3" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cartaBarajaOriginal4" min="-2" pref="62" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cartaBarajaOriginal5" min="-2" pref="62" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="BarajaPrincipalTEXT" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="botonGenerarMano" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="botonReiniciarMano" min="-2" pref="114" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="b3" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="b4" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="b5" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="b6" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="b7" min="-2" pref="45" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="NumeroTEXT" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="b8" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="b9" min="-2" pref="45" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="b13" min="-2" pref="45" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="b10" min="-2" pref="45" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="b11" min="-2" pref="45" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="b12" min="-2" pref="45" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="PaloCartaTEXT" min="-2" pref="66" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="filtrarTrebol" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="filtrarPicas" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="filtrarDiamante" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="filtrarEstrella" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="filtrarCorazon" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="filtrarJoker" min="-2" pref="98" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="281" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace pref="47" max="32767" attributes="0"/>
+                      <Component id="BarajaPrincipalTEXT" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="TituloVentana" min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cartaBarajaOriginal1" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaOriginal2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaOriginal4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaOriginal5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaOriginal3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cartaBarajaOriginal8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cartaBarajaOriginal6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cartaBarajaOriginal7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cartaBarajaOriginal9" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cartaBarajaOriginal10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cartaBarajaAux2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cartaBarajaAux6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cartaBarajaAux10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="botonReiniciarMano" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="botonGenerarMano" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="PaloCartaTEXT" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="filtrarTrebol" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="filtrarCorazon" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="filtrarPicas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="filtrarEstrella" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="filtrarDiamante" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="filtrarJoker" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BarajaAuxiliarTEXT" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="NumeroTEXT" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="b3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="b8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="b12" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="b13" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -45,5 +287,213 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
     </Container>
+    <Component class="javax.swing.JButton" name="botonGenerarMano">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Generar Cartas"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonGenerarManoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="TituloVentana">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="24" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Five Crowns"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BarajaPrincipalTEXT">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Baraja Principal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BarajaAuxiliarTEXT">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Baraja Auxiliar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="botonReiniciarMano">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reestablecer"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonReiniciarManoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="PaloCartaTEXT">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Palo Carta"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="NumeroTEXT">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Numero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal2">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartaBarajaOriginal2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal3">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartaBarajaOriginal3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal4">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal5">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal6">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal8">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal7">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal9">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaOriginal10">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux2">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartaBarajaAux2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux3">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartaBarajaAux3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux4">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux5">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux6">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartaBarajaAux6ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux7">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux8">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cartaBarajaAux8ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux9">
+    </Component>
+    <Component class="javax.swing.JTextField" name="cartaBarajaAux10">
+    </Component>
+    <Component class="javax.swing.JButton" name="filtrarTrebol">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Trebol"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtrarTrebolActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="filtrarPicas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Picas"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtrarPicasActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="filtrarDiamante">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Diamante"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtrarDiamanteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="filtrarCorazon">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Corazon"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtrarCorazonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="filtrarJoker">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Joker"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtrarJokerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="filtrarEstrella">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Estrella"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtrarEstrellaActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="b3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="6"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="7"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="8"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="9"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="10"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="J"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Q"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="b13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="K"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

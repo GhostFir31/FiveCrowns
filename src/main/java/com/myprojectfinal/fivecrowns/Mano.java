@@ -22,8 +22,6 @@ public class Mano {
 
     }
 
-
-
     public static Carta generarCartaAleatoria() {
 
         int aleatorioFigura;
@@ -33,11 +31,11 @@ public class Mano {
 
         HashMap<Integer, String> figuras = new HashMap<>();
 
-        figuras.put(1, "Trebol");
-        figuras.put(2, "Picas");
-        figuras.put(3, "Diamante");
-        figuras.put(4, "Corazon");
-        figuras.put(5, "Estrella");
+        figuras.put(1, "♣");
+        figuras.put(2, "♠");
+        figuras.put(3, "♦");
+        figuras.put(4, "♥");
+        figuras.put(5, "*");
         figuras.put(6, "Joker");
 
         HashMap<Integer, String> colores = new HashMap<>();
@@ -47,7 +45,7 @@ public class Mano {
         colores.put(3, "Amarillo");
         colores.put(4, "Azul");
         colores.put(5, "Verde");
-        colores.put(6, " -----");
+        colores.put(6, "");
 
         HashMap<Integer, String> numeros = new HashMap<>();
 
@@ -64,10 +62,10 @@ public class Mano {
         numeros.put(9, "J");
         numeros.put(10, "Q");
         numeros.put(11, "K");
-        numeros.put(12, "----- ");
+        numeros.put(12, "");
 
         aleatorioNumero = numeroAleatorio.nextInt(12) + 1;
-        aleatorioFigura = numeroAleatorio.nextInt(4) + 1;
+        aleatorioFigura = numeroAleatorio.nextInt(5) + 1;
 
         // Si el valor del numero es 14 regresa un joker
         if (aleatorioNumero == 12) {
@@ -141,6 +139,7 @@ public class Mano {
     }
 
     public void filtrarPorNumero(String numero, Pila<Carta> barajaAux) {
+        boolean encontrado=false;
 
         Pila<Carta> nuevaBaraja = new Pila<>();
         ArrayList<Carta> orden = new ArrayList<>();
@@ -154,6 +153,7 @@ public class Mano {
             if (carta.getNumero().equals(numero)) {
 
                 barajaAux.push(carta);
+                encontrado=true;
             }
         }
 
@@ -162,28 +162,32 @@ public class Mano {
             nuevaBaraja.push(orden.get(i));
 
         }
-
+        
+        if(encontrado==false){
+            System.out.println("Numero no encontrado en la baraja");
+        }
         baraja = nuevaBaraja;
     }
 
     public void filtrarPorPalo(int palo, Pila<Carta> barajaAux) {
         String trad = null;
+        boolean encontrado=false;
 
         switch (palo) {
             case 1:
-                trad = "Trebol";
+                trad = "♣";
                 break;
             case 2:
-                trad = "Picas";
+                trad = "♠";
                 break;
             case 3:
-                trad = "Diamante";
+                trad = "♦";
                 break;
             case 4:
-                trad = "Corazon";
+                trad = "♥";
                 break;
             case 5:
-                trad = "Estrella";
+                trad = "*";
                 break;
             case 6:
                 trad = "Joker";
@@ -201,6 +205,7 @@ public class Mano {
             }
             if (carta.getFigura().equals(trad)) {
                 barajaAux.push(carta);
+                encontrado=true;
             }
         }
 
@@ -209,7 +214,9 @@ public class Mano {
             nuevaBaraja.push(orden.get(i));
 
         }
-
+        if(encontrado==false){
+            System.out.println("Palo no encontrado en la baraja");
+        }
         baraja = nuevaBaraja;
     }
 
@@ -242,7 +249,25 @@ public class Mano {
 
         this.baraja = pilaCopia;
     }
+    public ArrayList<Carta> extraerPila (Pila<Carta> pilaOriginal) {
+        ArrayList<Carta> aux = new ArrayList<>();
+        ArrayList<Carta> contenidoPila = new ArrayList<>();
 
+        while (!pilaOriginal.estaVacia()) {
+            Carta carta = pilaOriginal.pop();
+            aux.add(carta);
+        }
+
+        for (int i = aux.size() - 1; i >= 0; i--) {
+            pilaOriginal.push(aux.get(i));
+        }
+
+        for (int i = aux.size() - 1; i >= 0; i--) {
+            contenidoPila.add(aux.get(i));
+        }
+
+        return contenidoPila; 
+    }
     @Override
     public String toString() {
         return "Baraja=" + baraja + "";

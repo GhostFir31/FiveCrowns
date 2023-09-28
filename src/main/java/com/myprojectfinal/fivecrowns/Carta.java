@@ -1,5 +1,7 @@
 package com.myprojectfinal.fivecrowns;
 
+import java.awt.Color;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -8,7 +10,6 @@ package com.myprojectfinal.fivecrowns;
  *
  * @author JesusOmar Leal
  */
-
 public class Carta {
 
     private String figura;
@@ -19,6 +20,30 @@ public class Carta {
         this.figura = figura;
         this.color = color;
         this.numero = numero;
+    }
+
+    public Color obtenerColor(String nombreColor) {
+
+        switch (nombreColor) {
+
+            case "Rojo":
+                return Color.RED;
+
+
+            case "Negro":
+                return Color.GRAY;
+          
+            case "Amarillo":
+                return Color.YELLOW;
+                
+            case "Azul":
+                return Color.BLUE;
+         
+            case "Verde":
+                return Color.GREEN;
+            
+        }
+        return Color.MAGENTA;
     }
 
     public String getFigura() {
@@ -47,7 +72,7 @@ public class Carta {
 
     @Override
     public String toString() {
-        return " "+ numero + " " + figura + " " + color;
+        return " " + numero + " " + figura ;// " " + color;
     }
 
 }
