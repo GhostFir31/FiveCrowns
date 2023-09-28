@@ -7,6 +7,7 @@ package com.myprojectfinal.fivecrowns;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -67,7 +68,7 @@ public class Mano {
         aleatorioNumero = numeroAleatorio.nextInt(12) + 1;
         aleatorioFigura = numeroAleatorio.nextInt(5) + 1;
 
-        // Si el valor del numero es 14 regresa un joker
+        // Si el valor del numero es 12 regresa un joker
         if (aleatorioNumero == 12) {
 
             return new Carta(figuras.get(6), colores.get(6), numeros.get(12));
@@ -165,6 +166,7 @@ public class Mano {
         
         if(encontrado==false){
             System.out.println("Numero no encontrado en la baraja");
+            JOptionPane.showMessageDialog(null, "Número no encontrado en la baraja", "Error", JOptionPane.INFORMATION_MESSAGE);
         }
         baraja = nuevaBaraja;
     }
@@ -216,6 +218,7 @@ public class Mano {
         }
         if(encontrado==false){
             System.out.println("Palo no encontrado en la baraja");
+            JOptionPane.showMessageDialog(null, "Palo no encontrado en la baraja", "Error", JOptionPane.INFORMATION_MESSAGE);
         }
         baraja = nuevaBaraja;
     }

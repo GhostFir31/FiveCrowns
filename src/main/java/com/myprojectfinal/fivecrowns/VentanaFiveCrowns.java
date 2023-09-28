@@ -4,7 +4,9 @@
  */
 package com.myprojectfinal.fivecrowns;
 
+import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.JTextField;
 
 /**
  *
@@ -186,101 +188,150 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
         });
 
         b3.setText("3");
+        b3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b3ActionPerformed(evt);
+            }
+        });
 
         b4.setText("4");
+        b4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b4ActionPerformed(evt);
+            }
+        });
 
         b5.setText("5");
+        b5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b5ActionPerformed(evt);
+            }
+        });
 
         b6.setText("6");
+        b6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b6ActionPerformed(evt);
+            }
+        });
 
         b7.setText("7");
+        b7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b7ActionPerformed(evt);
+            }
+        });
 
         b8.setText("8");
+        b8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b8ActionPerformed(evt);
+            }
+        });
 
         b9.setText("9");
+        b9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b9ActionPerformed(evt);
+            }
+        });
 
         b10.setText("10");
+        b10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b10ActionPerformed(evt);
+            }
+        });
 
         b11.setText("J");
+        b11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b11ActionPerformed(evt);
+            }
+        });
 
         b12.setText("Q");
+        b12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b12ActionPerformed(evt);
+            }
+        });
 
         b13.setText("K");
+        b13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b13ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TituloVentana)
-                .addGap(317, 317, 317))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(cartaBarajaAux1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cartaBarajaAux2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cartaBarajaAux6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cartaBarajaAux7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(BarajaAuxiliarTEXT))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cartaBarajaAux3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cartaBarajaAux4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cartaBarajaAux5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cartaBarajaAux8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cartaBarajaAux9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cartaBarajaAux10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(80, 80, 80))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
+                                .addGap(53, 53, 53)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(cartaBarajaOriginal1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cartaBarajaAux1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cartaBarajaOriginal2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cartaBarajaAux2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(cartaBarajaOriginal6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cartaBarajaAux6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cartaBarajaOriginal7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(cartaBarajaAux7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(BarajaAuxiliarTEXT))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(cartaBarajaOriginal8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cartaBarajaAux3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cartaBarajaOriginal9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cartaBarajaAux4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cartaBarajaOriginal10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(cartaBarajaAux5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(cartaBarajaOriginal3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cartaBarajaAux8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cartaBarajaOriginal4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(cartaBarajaAux9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cartaBarajaOriginal5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(BarajaPrincipalTEXT))
-                        .addGap(82, 82, 82)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(cartaBarajaAux10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(80, 80, 80))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cartaBarajaOriginal1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cartaBarajaOriginal2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cartaBarajaOriginal6, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cartaBarajaOriginal7, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cartaBarajaOriginal8, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cartaBarajaOriginal9, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cartaBarajaOriginal10, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cartaBarajaOriginal3, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cartaBarajaOriginal4, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cartaBarajaOriginal5, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(BarajaPrincipalTEXT))
+                                .addGap(82, 82, 82)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(botonGenerarMano)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
                                 .addComponent(botonReiniciarMano, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(5, 5, 5)
@@ -293,28 +344,22 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                                         .addComponent(b5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(b6, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(NumeroTEXT)
                                     .addGroup(layout.createSequentialGroup()
+                                        .addComponent(b8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(b9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(NumeroTEXT)
+                                            .addComponent(b13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(b8, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(b10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(b9, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(b11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(b13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(b10, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(b11, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(b12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                        .addGap(0, 0, Short.MAX_VALUE)))))
-                        .addGap(139, 139, 139))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(b12, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addComponent(PaloCartaTEXT, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -325,23 +370,29 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(filtrarEstrella, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(filtrarCorazon, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(filtrarJoker, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(filtrarJoker, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(297, 297, 297)
+                        .addComponent(TituloVentana)))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(47, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
                         .addComponent(BarajaPrincipalTEXT)
                         .addGap(26, 26, 26))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TituloVentana, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(19, 19, 19)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(TituloVentana, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -417,52 +468,127 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonGenerarManoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGenerarManoActionPerformed
-
         ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
 
         this.mano = new Mano(10);
         mano2.crearCopia(mano.getBaraja());
+        barajaAux.clear();
 
         contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
 
         // System.out.println("" + contenidoMano);
-        //BARAJA ORIGINAL IMPRESION
-        cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-        cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
 
-        cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-        cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-        cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-        cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-        cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-        cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-        cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-        cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-        cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-        cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
-
-        cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-        cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
-
-        cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-        cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
-
-        cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-        cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
-
-        cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-        cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
 
     }//GEN-LAST:event_botonGenerarManoActionPerformed
+    private JTextField getCartaBarajaOriginalLabel(int numero) {
+        switch (numero) {
+            case 1:
+                return cartaBarajaOriginal1;
+            case 2:
+                return cartaBarajaOriginal2;
+            case 3:
+                return cartaBarajaOriginal3;
+            case 4:
+                return cartaBarajaOriginal4;
+            case 5:
+                return cartaBarajaOriginal5;
+            case 6:
+                return cartaBarajaOriginal6;
+            case 7:
+                return cartaBarajaOriginal7;
+            case 8:
+                return cartaBarajaOriginal8;
+            case 9:
+                return cartaBarajaOriginal9;
+            case 10:
+                return cartaBarajaOriginal10;
+            default:
+                throw new IllegalArgumentException("Número de carta no válido: " + numero);
+        }
+    }
 
+    private JTextField getCartaBarajaAuxLabel(int numero) {
+        switch (numero) {
+            case 1:
+                return cartaBarajaAux1;
+            case 2:
+                return cartaBarajaAux2;
+            case 3:
+                return cartaBarajaAux3;
+            case 4:
+                return cartaBarajaAux4;
+            case 5:
+                return cartaBarajaAux5;
+            case 6:
+                return cartaBarajaAux6;
+            case 7:
+                return cartaBarajaAux7;
+            case 8:
+                return cartaBarajaAux8;
+            case 9:
+                return cartaBarajaAux9;
+            case 10:
+                return cartaBarajaAux10;
+            default:
+                throw new IllegalArgumentException("Número de carta no válido: " + numero);
+        }
+    }
     private void botonReiniciarManoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonReiniciarManoActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
         barajaAux.clear();
 
         mano.crearCopia(mano2.getBaraja());
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_botonReiniciarManoActionPerformed
 
     private void cartaBarajaOriginal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartaBarajaOriginal2ActionPerformed
@@ -490,23 +616,213 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
     }//GEN-LAST:event_cartaBarajaAux8ActionPerformed
 
     private void filtrarPicasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarPicasActionPerformed
-        // TODO add your handling code here:
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+
+            mano.filtrarPorPalo(2, barajaAux);
+
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_filtrarPicasActionPerformed
 
     private void filtrarDiamanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarDiamanteActionPerformed
-        // TODO add your handling code here:
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+
+            mano.filtrarPorPalo(3, barajaAux);
+
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_filtrarDiamanteActionPerformed
 
     private void filtrarCorazonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarCorazonActionPerformed
-        // TODO add your handling code here:
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+
+            mano.filtrarPorPalo(4, barajaAux);
+
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_filtrarCorazonActionPerformed
 
     private void filtrarJokerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarJokerActionPerformed
-        // TODO add your handling code here:
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+
+            mano.filtrarPorPalo(6, barajaAux);
+
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_filtrarJokerActionPerformed
 
     private void filtrarEstrellaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarEstrellaActionPerformed
-        // TODO add your handling code here:
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+
+            mano.filtrarPorPalo(5, barajaAux);
+
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_filtrarEstrellaActionPerformed
 
     private void filtrarTrebolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtrarTrebolActionPerformed
@@ -526,355 +842,472 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
         contenidoMano = mano.extraerPila(mano.getBaraja());
         contenidoAux = mano.extraerPila(barajaAux);
 
-        System.out.println("" + contenidoMano);
-        System.out.println("" + barajaAux);
-
-//BARAJA ORIGINAL IMPRESION
- 
-                cartaBarajaOriginal1.setText("");
-
-                cartaBarajaOriginal2.setText("");
-
-                cartaBarajaOriginal3.setText("");
-
-                cartaBarajaOriginal4.setText("");
-
-                cartaBarajaOriginal5.setText("");
-
-                cartaBarajaOriginal6.setText("");
-
-                cartaBarajaOriginal7.setText("");
-
-                cartaBarajaOriginal8.setText("");
-
-                cartaBarajaOriginal9.setText("");
-
-                cartaBarajaOriginal10.setText("");
-
-
-        switch (contenidoMano.size()) {
-
-            case 0:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setText("");
-
-                cartaBarajaOriginal3.setText("");
-
-                cartaBarajaOriginal4.setText("");
-
-                cartaBarajaOriginal5.setText("");
-
-                cartaBarajaOriginal6.setText("");
-
-                cartaBarajaOriginal7.setText("");
-
-                cartaBarajaOriginal8.setText("");
-
-                cartaBarajaOriginal9.setText("");
-
-                cartaBarajaOriginal10.setText("");
-                break;
-            case 1:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setText("");
-
-                cartaBarajaOriginal4.setText("");
-
-                cartaBarajaOriginal5.setText("");
-
-                cartaBarajaOriginal6.setText("");
-
-                cartaBarajaOriginal7.setText("");
-
-                cartaBarajaOriginal8.setText("");
-
-                cartaBarajaOriginal9.setText("");
-
-                cartaBarajaOriginal10.setText("");
-                break;
-            case 2:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setText("");
-
-                cartaBarajaOriginal5.setText("");
-
-                cartaBarajaOriginal6.setText("");
-
-                cartaBarajaOriginal7.setText("");
-
-                cartaBarajaOriginal8.setText("");
-
-                cartaBarajaOriginal9.setText("");
-
-                cartaBarajaOriginal10.setText("");
-                break;
-            case 3:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-               
-                cartaBarajaOriginal5.setText("");
-
-            
-                cartaBarajaOriginal6.setText("");
-
-                
-                cartaBarajaOriginal7.setText("");
-
-                
-                cartaBarajaOriginal8.setText("");
-
-               
-                cartaBarajaOriginal9.setText("");
-
-               
-                cartaBarajaOriginal10.setText("");
-                break;
-
-            case 4:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-           
-                cartaBarajaOriginal6.setText("");
-
-                
-                cartaBarajaOriginal7.setText("");
-
-               
-                cartaBarajaOriginal8.setText("");
-
-                
-                cartaBarajaOriginal9.setText("");
-
-                
-                cartaBarajaOriginal10.setText("");
-                break;
-            case 5:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
-
-                
-                cartaBarajaOriginal7.setText("");
-
-                
-                cartaBarajaOriginal8.setText("");
-
-                
-                cartaBarajaOriginal9.setText("");
-
-                
-                cartaBarajaOriginal10.setText("");
-                break;
-            case 6:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
-
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
-
-                
-                cartaBarajaOriginal8.setText("");
-
-                
-                cartaBarajaOriginal9.setText("");
-
-                
-                cartaBarajaOriginal10.setText("");
-                break;
-            case 7:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
-
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
-
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
-
-                
-                cartaBarajaOriginal9.setText("");
-
-                
-                cartaBarajaOriginal10.setText("" );
-                break;
-            case 8:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
-
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
-
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
-
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
-
-                
-                cartaBarajaOriginal10.setText("");
-
-                break;
-            case 9:
-                cartaBarajaOriginal1.setBackground(contenidoMano.get(0).obtenerColor(contenidoMano.get(0).getColor()));
-                cartaBarajaOriginal1.setText("" + contenidoMano.get(0));
-
-                cartaBarajaOriginal2.setBackground(contenidoMano.get(1).obtenerColor(contenidoMano.get(1).getColor()));
-                cartaBarajaOriginal2.setText("" + contenidoMano.get(1));
-
-                cartaBarajaOriginal3.setBackground(contenidoMano.get(2).obtenerColor(contenidoMano.get(2).getColor()));
-                cartaBarajaOriginal3.setText("" + contenidoMano.get(2));
-
-                cartaBarajaOriginal4.setBackground(contenidoMano.get(3).obtenerColor(contenidoMano.get(3).getColor()));
-                cartaBarajaOriginal4.setText("" + contenidoMano.get(3));
-
-                cartaBarajaOriginal5.setBackground(contenidoMano.get(4).obtenerColor(contenidoMano.get(4).getColor()));
-                cartaBarajaOriginal5.setText("" + contenidoMano.get(4));
-
-                cartaBarajaOriginal6.setBackground(contenidoMano.get(5).obtenerColor(contenidoMano.get(5).getColor()));
-                cartaBarajaOriginal6.setText("" + contenidoMano.get(5));
-
-                cartaBarajaOriginal7.setBackground(contenidoMano.get(6).obtenerColor(contenidoMano.get(6).getColor()));
-                cartaBarajaOriginal7.setText("" + contenidoMano.get(6));
-
-                cartaBarajaOriginal8.setBackground(contenidoMano.get(7).obtenerColor(contenidoMano.get(7).getColor()));
-                cartaBarajaOriginal8.setText("" + contenidoMano.get(7));
-
-                cartaBarajaOriginal9.setBackground(contenidoMano.get(8).obtenerColor(contenidoMano.get(8).getColor()));
-                cartaBarajaOriginal9.setText("" + contenidoMano.get(8));
-
-                cartaBarajaOriginal10.setBackground(contenidoMano.get(9).obtenerColor(contenidoMano.get(9).getColor()));
-                cartaBarajaOriginal10.setText("" + contenidoMano.get(9));
-                break;
+        //  System.out.println("" + contenidoMano);
+        //  System.out.println("" + barajaAux);
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
         }
-        /* //BARAJA Aux IMPRESION
-        cartaBarajaAux1.setBackground(contenidoAux.get(0).obtenerColor(contenidoAux.get(0).getColor()));
-        cartaBarajaAux1.setText("" + contenidoAux.get(0));
 
-        cartaBarajaAux2.setBackground(contenidoAux.get(1).obtenerColor(contenidoAux.get(1).getColor()));
-        cartaBarajaAux2.setText("" + contenidoAux.get(1));
-
-        cartaBarajaAux3.setBackground(contenidoAux.get(2).obtenerColor(contenidoAux.get(2).getColor()));
-        cartaBarajaAux3.setText("" + contenidoAux.get(2));
-
-        cartaBarajaAux4.setBackground(contenidoAux.get(3).obtenerColor(contenidoAux.get(3).getColor()));
-        cartaBarajaAux4.setText("" + contenidoAux.get(3));
-
-        cartaBarajaAux5.setBackground(contenidoAux.get(4).obtenerColor(contenidoAux.get(4).getColor()));
-        cartaBarajaAux5.setText("" + contenidoAux.get(4));
-
-        cartaBarajaAux6.setBackground(contenidoAux.get(5).obtenerColor(contenidoAux.get(5).getColor()));
-        cartaBarajaAux6.setText("" + contenidoAux.get(5));
-
-        cartaBarajaAux7.setBackground(contenidoAux.get(6).obtenerColor(contenidoAux.get(6).getColor()));
-        cartaBarajaAux7.setText("" + contenidoAux.get(6));
-
-        cartaBarajaAux8.setBackground(contenidoAux.get(7).obtenerColor(contenidoAux.get(7).getColor()));
-        cartaBarajaAux8.setText("" + contenidoAux.get(7));
-
-        cartaBarajaAux9.setBackground(contenidoAux.get(8).obtenerColor(contenidoAux.get(8).getColor()));
-        cartaBarajaAux9.setText("" + contenidoAux.get(8));
-
-        cartaBarajaAux10.setBackground(contenidoAux.get(9).obtenerColor(contenidoAux.get(9).getColor()));
-        cartaBarajaAux10.setText("" + contenidoAux.get(9));
-         */
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
     }//GEN-LAST:event_filtrarTrebolActionPerformed
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("3", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b3ActionPerformed
+
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("4", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b4ActionPerformed
+
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("5", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b5ActionPerformed
+
+    private void b6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b6ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("6", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b6ActionPerformed
+
+    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("7", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b7ActionPerformed
+
+    private void b8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b8ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("8", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b8ActionPerformed
+
+    private void b9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b9ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("9", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b9ActionPerformed
+
+    private void b10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b10ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("10", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b10ActionPerformed
+
+    private void b11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b11ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("J", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b11ActionPerformed
+
+    private void b12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b12ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("Q", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b12ActionPerformed
+
+    private void b13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b13ActionPerformed
+        ArrayList<Carta> contenidoMano = new ArrayList<>();
+        ArrayList<Carta> contenidoAux = new ArrayList<>();
+
+        if (!mano.getBaraja().estaVacia()) {
+            mano.filtrarPorNumero("K", barajaAux);
+        } else {
+
+            System.out.println("Ya no hay cartas");
+
+        }
+
+        contenidoMano = mano.extraerPila(mano.getBaraja());
+        contenidoAux = mano.extraerPila(barajaAux);
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaOriginalLabel(i + 1);
+            if (i < contenidoMano.size()) {
+                Carta carta = contenidoMano.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            JTextField cartaLabel = getCartaBarajaAuxLabel(i + 1);
+            if (i < contenidoAux.size()) {
+                Carta carta = contenidoAux.get(i);
+                cartaLabel.setBackground(carta.obtenerColor(carta.getColor()));
+                cartaLabel.setText(carta.toString());
+            } else {
+                cartaLabel.setBackground(null);
+                cartaLabel.setText("");
+            }
+        }
+    }//GEN-LAST:event_b13ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -890,16 +1323,24 @@ public class VentanaFiveCrowns extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VentanaFiveCrowns.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
